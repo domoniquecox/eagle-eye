@@ -36,7 +36,7 @@ while True:
 
     #detect faces in the grayscale frame
     rects = detector  .detectMultiScale(
-        cv2.Color(frame, cv2.COLOR_BGR2GRAY), scaleFactor=1.1,
+        cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY), scaleFactor=1.1,
         minNeighbors=5, minSize=(30,30)
     )
 
