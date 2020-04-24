@@ -1,0 +1,87 @@
+<!DOCTYPE html>  
+<html lang="en"> 
+<head>
+<title>Courses</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="{{ url_for("static", filename="eagleeye.css") }}">
+</head>
+
+
+<body>
+<div class="back">
+<header> 
+	<div class="table-row table-head">
+		<div class="table-cell">
+			<a href="/courses">Home</a>
+		</div>
+	
+
+	
+		<div class="table-cell">
+			<a href="/logout">Logout</a>
+		</div>	
+		
+	</div>
+</header>
+<div class="table-box">
+	<div class="table-row table-head">
+		<div class="table-cell">
+			<p>Courses</p>
+		</div>
+	
+	</div>
+	
+	<div class="table-row">
+		<div class="table-cell">
+			<a href="/math4212">MATH4212</a>
+		</div>
+	
+	
+	</div>
+
+	<div class="table-row">
+		<div class="table-cell">
+			<a href="attendance.html">PYSCH1001</a>
+		</div>
+	
+		
+		
+	</div>
+		
+	<div class="table-row">
+		<div class="table-cell">
+			<a href="attendance.html" >HLTH2223</a>
+		</div>
+	
+		
+	</div>
+	
+<div class="table-row">
+		<div class="table-cell">
+			<a href="attendance.html">HLTH2003</a>
+		</div>
+		
+	
+</div>
+
+<footer></footer>
+</div>
+</body>
+<script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+<script>
+	var config = {
+		apiKey: "AIzaSyDd7CWwzX-cxTMk1tH-pzDEl21-FK6fUsI",
+    authDomain: "eagle-eye-f3a0d.firebaseapp.com",
+    databaseURL: "https://eagle-eye-f3a0d.firebaseio.com",
+    projectId: "eagle-eye-f3a0d",
+    storageBucket: "eagle-eye-f3a0d.appspot.com",
+    messagingSenderId: "1020036625253",
+    appId: "1:1020036625253:web:b289f813b7c068d852278c",
+    measurementId: "G-VJ723HQ5K4"
+};
+firebase.initializeApp(config);
+var messagesRef = firebase.database().ref('students');
+
+
+</script>
+</html>

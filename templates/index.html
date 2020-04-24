@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Eagle Eye</title>
+    <h1><center>Eagle Eye Login</center></h1>
+	<link rel="stylesheet" href="{{ url_for("static", filename="eagleeye.css") }}">
+  </head>
+  <body>
+    <h1>Login</h1>
+	<form action="" method="POST">
+		<div class="form-group">
+			<label>email</label>
+			<input type="text" name="email" class="form-control" value={{request.form.email}}>
+		</div>
+		<div class="form-group">
+			<label>password</label>
+			<input type="password" name="password" class="form-control" value={{request.form.password}}>
+		</div>
+		<button type="submit" class="btn btn-primary"> Submit </button>
+	</form>
+  </body>
+</html>
