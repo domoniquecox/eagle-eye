@@ -1,0 +1,89 @@
+*
+{
+		margin: 0;
+		padding: 0;
+		font-family: sans-serif;
+}
+
+
+.back
+{
+	background-image: url("EagleEye.jpg");
+	background-repeat: no-repeat;
+	background-size: 750px;
+	background-position: center;
+
+}
+
+.table-box
+{
+	margin: 50px auto;
+	opacity: 0.9;
+}
+
+
+.table-row
+{
+	display: table;
+	width: 80%;
+	margin: 10px auto;
+	font-family: sans-serif;
+	padding: 12px 0;
+	color: #555;
+	font-size: 13px;
+	box-shadow: 0 1px 4px 0 rgba(0,0,50,0.3);
+	background-color: orange;
+
+}
+
+.table-roww
+{
+	display: table;
+	width: 80%;
+	margin: 10px auto;
+	font-family: sans-serif;
+	padding: 12px 0;
+	color: #555;
+	font-size: 13px;
+	box-shadow: 0 1px 4px 0 rgba(0,0,50,0.3);
+	background-color: orange;
+	color: black;
+
+}
+
+.table-cell
+{
+	display: table-cell;
+	width: 30%;
+	text-align: center;
+	padding: 4px 0;
+	border-right: 1px solid #d6d4d4;
+	vertical-align: middle;
+}
+
+
+
+.table-head
+{
+	background-color: lightgrey;
+	color: black;
+}
+
+.button 
+{
+        text-align: center;
+		padding: 25px;
+		margin: 35px, 5px, 5px, 5px;
+}
+
+.logout
+{
+	text-align: center;
+	font-size: 35px;
+	padding: 50px;
+}
+.tb
+{
+	background-color: white;
+	color: black;
+}
