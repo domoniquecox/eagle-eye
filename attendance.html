@@ -106,7 +106,28 @@
 </div>
 
 <div class="button">
-<button type="button" onclick="alert('Attendance Submitted')">Submit</button>
+<form> 
+<button style=  "color:blue; background-color:orange" type="submit" onclick="alert('Attendance Submitted')">Submit</button>
+</form>
+</div>
+
+<div class="button">
+		<form action ="/attendance" method="post">
+		<button style=  "color:red; background-color:orange" type="submit">Faces Recognized</button>
+		</form>
+	</div>
+	
+	<div class="container-fluid">
+	{% for l in n %}
+		<ul class="list-group">
+			<li class ="list-group-item">
+				{{l}}
+			</li>
+		</ul>
+	{% endfor %}
+	</div>
+
+
 </div>
 <footer></footer>
 </div>
